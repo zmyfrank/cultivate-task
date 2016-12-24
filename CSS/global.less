@@ -1,3 +1,4 @@
+/*雪碧图公共样式*/
 .c-task{background:url(../images/c-task.png) no-repeat ;}
 .icon-qq{height:27px;width:27px;background-position:0 0;}
 .icon-kongjian{height:28px;width:28px;background-position:-27px 0;}
@@ -11,3 +12,72 @@
 .icon-3-conment{height:33px;width:58px;background-position:-315px 0;}
 .icon-phone{height:42px;width:58px;background-position:-373px 0;}
 .icon-onlinetalk{height:44px;width:61px;background-position:-431px 0;}
+
+i {
+  display: inline-block;
+  background: url("../images/c-task.png") no-repeat;
+  background-size: 4.92rem 0.88rem;
+}
+
+html{
+  font-size: 625%;
+}
+body {
+  font-family: "Microsoft YaHei",sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/*section公共样式*/
+.m-mnc {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  h2{
+    font-size: 0.4799rem;
+  }
+  .u-mnc_bd {
+    position: relative;
+  }
+  .icon-pre_pos{
+    position: absolute;
+    top: 0.5rem;
+    left: -0.6rem;
+  }
+  .icon-nex_pos {
+    position: absolute;
+    top: 0.5rem;
+    right: -0.6rem;
+  }
+}
+
+.u-mnc_select {
+  margin-top: 0.2rem;
+  p {
+    display: block;
+    line-height: 0.45rem;
+    background: url("../images/icon-circleborder.png") no-repeat center;
+    font-size: 0.24rem;
+    color: #939393;
+    &:hover {
+      background: url("../images/icon-circleborder2.png") no-repeat center;
+      color: white;
+    }
+  }
+}
+/*给每个栅格里的元素增加margintop*/
+.f-maintop {
+  margin-top: 0.5rem;
+}
