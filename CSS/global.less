@@ -53,16 +53,39 @@ a {
   }
   .icon-pre_pos{
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     left: -0.6rem;
-  }
+  }/*左右图标偏移部分*/
   .icon-nex_pos {
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     right: -0.6rem;
   }
 }
-
+/*为左右点击图标设置媒体查询*/
+@media (max-width: 996px) {
+  .icon-pre_pos{
+    position: absolute!important;
+    top: 3rem!important;
+    left: -0.6rem!important;
+  }/*左右图标偏移部分*/
+  .icon-nex_pos {
+    position: absolute!important;
+    top: 3rem!important;
+    right: -0.6rem!important;
+  }
+}
+@media (max-width: 768px) {
+  @media (max-width: 996px) {
+    .icon-pre_pos{
+     display: none!important;
+    }/*左右图标偏移部分*/
+    .icon-nex_pos {
+      display: none!important;
+    }/*最小时直接隐藏*/
+  }
+}
+/*选择部分样式*/
 .u-mnc_select {
   margin-top: 0.2rem;
   p {
