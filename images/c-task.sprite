@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="c-task" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="icon-qq.png" LocationX="0" LocationY="0" />
+    <Sprite Path="icon-kongjian.png" LocationX="27" LocationY="0" />
+    <Sprite Path="icon-wechat.png" LocationX="55" LocationY="0" />
+    <Sprite Path="icon-weibo.png" LocationX="84" LocationY="0" />
+    <Sprite Path="icon-3-weibo.png" LocationX="113" LocationY="0" />
+    <Sprite Path="icon-3-wechat.png" LocationX="145" LocationY="0" />
+    <Sprite Path="icon-3thumbtack.png" LocationX="177" LocationY="0" />
+    <Sprite Path="icon-nex.png" LocationX="217" LocationY="0" />
+    <Sprite Path="icon-pre.png" LocationX="265" LocationY="0" />
+    <Sprite Path="icon-3-conment.png" LocationX="315" LocationY="0" />
+    <Sprite Path="icon-phone.png" LocationX="373" LocationY="0" />
+    <Sprite Path="icon-onlinetalk.png" LocationX="431" LocationY="0" />
+  </SpriteList>
+</SpriteFile>
