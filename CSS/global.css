@@ -73,80 +73,281 @@ html {
 body {
   font-family: "Microsoft YaHei", sans-serif;
 }
-img {
-  max-width: 100%;
-}
-ul li {
-  list-style: none;
-}
 a {
   text-decoration: none;
   color: #000;
 }
 a:hover {
+  cursor: pointer;
   text-decoration: none;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.cf:after {
+  content: "'";
+  height: 0;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+/* 模块公用标题 */
+.u-mnc_bd,
+.u-mnc_hd {
+  position: relative;
+  text-align: center;
+}
+.u-mnc_bd h2,
+.u-mnc_hd h2 {
+  font-size: 0.4799rem;
+}
+/* 公用按钮 */
+.u-morebtn {
+  display: inline-block;
+  width: 1.7rem;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: .2rem  0;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  border-radius: 32px;
+}
+/*btn公共样式*/
+.u-btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+/* 查看更多按钮 */
+.u-btn_seemore {
+  line-height: 0.8rem;
+  width: 2.7rem;
+  border: 0.02rem solid #c9c9c9;
+  border-radius: 0.5rem;
+  font-size: 0.24rem;
+  color: #e20606;
+}
+/* 选择按钮 */
+.u-btn_select {
+  line-height: 0.45rem;
+  width: 2.25rem;
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  font-size: 0.24rem;
+  color: #939393;
+}
+.u-btn_select:hover {
+  background-color: #ca0000;
+  color: #ffffff;
+}
+/* 查看详情 */
+.u-btn_seedetails {
+  line-height: 0.45rem;
+  width: 1.8rem;
+  background-color: #ca0000;
+  border-radius: 0.1rem;
+  font-size: 0.1866rem;
+  color: white;
+}
+.u-btn_seedetails:hover {
+  color: white;
 }
 /*section公共样式*/
 .m-mnc {
-  margin-top: 0.7rem;
-  margin-bottom: 1rem;
+  margin-top: .6rem;
+  margin-bottom: .5rem;
   text-align: center;
   /*左右图标偏移部分*/
 }
-.m-mnc h2 {
-  font-size: 0.4799rem;
-}
-.m-mnc .u-mnc_bd {
-  position: relative;
-}
-.m-mnc .icon-pre_pos {
-  position: absolute;
-  top: 1rem;
-  left: -0.6rem;
-}
+.m-mnc .icon-pre_pos,
 .m-mnc .icon-nex_pos {
   position: absolute;
-  top: 1rem;
-  right: -0.6rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-65%);
+}
+.m-mnc .icon-nex_pos {
+  left: auto;
+  right: 0;
 }
 /*为左右点击图标设置媒体查询*/
-@media (max-width: 996px) {
-  .icon-pre_pos {
-    position: absolute!important;
-    top: 3rem!important;
-    left: -0.6rem !important;
+@media (max-width: 768px) {
+  .m-mnc {
+    /*左右图标偏移部分*/
+    /*最小时直接隐藏*/
   }
-  /*左右图标偏移部分*/
-  .icon-nex_pos {
-    position: absolute!important;
-    top: 3rem!important;
-    right: -0.6rem !important;
+  .m-mnc .icon-pre_pos {
+    display: none;
   }
-}
-@media (max-width: 768px) and (max-width: 996px) {
-  .icon-pre_pos {
-    display: none!important;
-  }
-  .icon-nex_pos {
-    display: none!important;
+  .m-mnc .icon-nex_pos {
+    display: none;
   }
 }
 /*选择部分样式*/
 .u-mnc_select {
   margin-top: 0.2rem;
 }
-.u-mnc_select p {
-  display: block;
-  line-height: 0.45rem;
-  background: url("../images/icon-circleborder.png") no-repeat center;
-  font-size: 0.24rem;
-  color: #939393;
-}
-.u-mnc_select p:hover {
-  background: url("../images/icon-circleborder2.png") no-repeat center;
-  color: white;
+.u-mnc_select .u-btn_select {
+  margin-bottom: .1rem;
 }
 /*给每个栅格里的元素增加margintop*/
 .f-maintop {
   margin-top: 0.5rem;
+}
+/* ... */
+footer {
+  text-align: center;
+  color: white ;
+  border-top: 5px solid #CA0000;
+  background-color: black;
+  font-size: .14rem;
+}
+footer div {
+  padding: .1rem 0 .1rem 0;
+}
+footer img {
+  padding: .1rem 0;
+}
+footer .footer-m {
+  border-top: 1px solid white;
+}
+.footer-m {
+  border-top: 1px solid white;
+  padding: .2rem 0;
+}
+header {
+  overflow: hidden;
+}
+header .m-hdtt {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+header img {
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+}
+header .header-m-al {
+  color: red;
+}
+header .icon-l {
+  padding-left: 0;
+  padding-right: 30px;
+  font-size: .16rem;
+  line-height: .39rem;
+}
+.icon {
+  padding-top: 0.05rem;
+}
+.icon .header-m-qq {
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background-position-x: 2px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.icon .header-m-wb {
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background-position-x: -84px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.icon .header-m-qs {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-position-x: -27px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.icon .header-m-wx {
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background-position-x: -55px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.m {
+  text-align: center;
+  color: white;
+  font-size: .28rem;
+  background-color: #362E2B;
+}
+.m ul {
+  margin: 0;
+  padding: .195rem 0;
+  font-size: .18rem;
+}
+.m ul .m-active {
+  color: #FFFC00;
+}
+.m a {
+  color: white;
+}
+.m a:hover {
+  color: #FFFC00;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .m a {
+    padding: .05rem 0;
+    font-size: .18rem;
+  }
+}
+.m div {
+  padding: .12rem 0;
+  color: white;
+  background-color: #CA0000;
+}
+.m span {
+  position: relative;
+}
+.m span .m-f-delta {
+  position: absolute;
+  right: -30px;
+  top: 10px;
+  border-top: 6px solid white;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.m-lg {
+  font-size: .32rem;
+  color: gray;
+  padding: .4rem 0;
+}
+@media screen and (max-width: 768px) {
+  .m-lg {
+    text-align: center;
+  }
+  .m-lg .lg-r {
+    text-align: center;
+  }
+}
+.m-lg .lg-l {
+  color: #CA0000;
+  padding-left: 0;
+  padding-right: 30px;
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  .m-lg {
+    padding-top: .2rem;
+    padding-bottom: .3rem;
+    font-size: .18rem;
+  }
 }

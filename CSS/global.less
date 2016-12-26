@@ -12,7 +12,6 @@
 .icon-3-conment{height:33px;width:58px;background-position:-315px 0;}
 .icon-phone{height:42px;width:58px;background-position:-373px 0;}
 .icon-onlinetalk{height:44px;width:61px;background-position:-431px 0;}
-
 i {
   display: inline-block;
   background: url("../images/c-task.png") no-repeat;
@@ -26,81 +25,277 @@ body {
   font-family: "Microsoft YaHei",sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-ul li {
-  list-style: none;
-}
 a {
   text-decoration: none;
   color: #000;
   &:hover {
+    cursor: pointer;
     text-decoration: none;
+  }
+}
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cf:after {
+    content: "'";
+    height: 0;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+/* 模块公用标题 */
+  .u-mnc_bd,
+  .u-mnc_hd {
+    position: relative;
+    text-align: center;
+    h2{
+         font-size: 0.4799rem;
+    }
+  }
+/* 公用按钮 */
+.u-morebtn {
+  display: inline-block;
+  width: 1.7rem;
+  margin: 0 auto;
+  font-size: 16px;
+  padding:.2rem  0;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  border-radius: 32px;
+}
+
+/*btn公共样式*/
+.u-btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+/* 查看更多按钮 */
+.u-btn_seemore {
+  line-height: 0.8rem;
+  width: 2.7rem;
+  border: 0.02rem solid #c9c9c9;
+  border-radius: 0.5rem;
+  font-size: 0.24rem;
+  color: #e20606;
+}
+
+
+/* 选择按钮 */
+
+.u-btn_select {
+  line-height: 0.45rem;
+  width: 2.25rem;
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  font-size: 0.24rem;
+  color: #939393;
+  &:hover {
+    background-color: #ca0000;
+    color: #ffffff;
+  }
+}
+
+/* 查看详情 */
+.u-btn_seedetails {
+  line-height: 0.45rem;
+  width: 1.8rem;
+  background-color: #ca0000;
+  border-radius: 0.1rem;
+  font-size: 0.1866rem;
+  color: white;
+  &:hover {
+    color: white;
   }
 }
 
 /*section公共样式*/
 .m-mnc {
-  margin-top: 0.7rem;
-  margin-bottom: 1rem;
+  margin-top: .6rem;
+  margin-bottom:.5rem;
   text-align: center;
-  h2{
-    font-size: 0.4799rem;
-  }
-  .u-mnc_bd {
-    position: relative;
-  }
-  .icon-pre_pos{
+  .icon-pre_pos,
+  .icon-nex_pos{
     position: absolute;
-    top: 1rem;
-    left: -0.6rem;
+    top: 50%;
+    left: 0;
+    transform:translateY(-65%);
   }/*左右图标偏移部分*/
   .icon-nex_pos {
-    position: absolute;
-    top: 1rem;
-    right: -0.6rem;
+    left:auto;
+    right: 0;
   }
 }
+
 /*为左右点击图标设置媒体查询*/
-@media (max-width: 996px) {
-  .icon-pre_pos{
-    position: absolute!important;
-    top: 3rem!important;
-    left: -0.6rem!important;
-  }/*左右图标偏移部分*/
-  .icon-nex_pos {
-    position: absolute!important;
-    top: 3rem!important;
-    right: -0.6rem!important;
-  }
-}
 @media (max-width: 768px) {
-  @media (max-width: 996px) {
+   .m-mnc {
     .icon-pre_pos{
-     display: none!important;
+     display: none;
     }/*左右图标偏移部分*/
     .icon-nex_pos {
-      display: none!important;
+      display: none;
     }/*最小时直接隐藏*/
   }
 }
 /*选择部分样式*/
 .u-mnc_select {
   margin-top: 0.2rem;
-  p {
-    display: block;
-    line-height: 0.45rem;
-    background: url("../images/icon-circleborder.png") no-repeat center;
-    font-size: 0.24rem;
-    color: #939393;
-    &:hover {
-      background: url("../images/icon-circleborder2.png") no-repeat center;
-      color: white;
-    }
+  .u-btn_select{
+    margin-bottom: .1rem;
   }
 }
 /*给每个栅格里的元素增加margintop*/
 .f-maintop {
   margin-top: 0.5rem;
+}
+
+/* ... */
+@color-i:#CA0000;
+@color1:white;
+.pos(@width,@height,@left,@top ,@url:url("../images/c-task.png")){
+  display: inline-block;
+  width: @width;
+  height: @height;
+  background-position-x: @left;
+  background-position-y: @top;
+  background-image:@url;
+}
+footer{
+  text-align: center;
+  color:white ;
+  border-top: 5px solid @color-i;
+  background-color: black;
+    font-size: .14rem;
+  div{
+    padding: .1rem 0 .1rem 0;
+  }
+  img{
+    padding: .1rem 0;
+  }
+  .footer-m {
+    border-top: 1px solid white;
+  }
+}
+.footer-m{
+  border-top: 1px solid white;
+  padding: .2rem 0;
+}
+header{
+  overflow: hidden;
+  .m-hdtt {
+    box-shadow:0 0 10px 1px rgba(0,0,0,.1)
+  }
+  img{
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+  .header-m-al{
+    color: red;
+  }
+  .icon-l{
+    padding-left: 0;
+    padding-right: 30px;
+    font-size: .16rem;
+    line-height: .39rem;
+  }
+}
+.icon{
+  padding-top: 0.05rem;
+  .header-m-qq{
+    .pos(29px,28px,2px,0);
+  }
+  .header-m-wb{
+    .pos(29px,28px,-84px,0);
+  }
+  .header-m-qs{
+    .pos(28px,28px,-27px,0);
+  }
+  .header-m-wx {
+    .pos(29px,28px,-55px,0);
+  }
+}
+.m{
+  text-align: center;
+  color: @color1; 
+  font-size: .28rem;
+  background-color: #362E2B;
+  ul{margin: 0;
+    padding:.195rem 0;
+    font-size: .18rem;
+    .m-active{
+      color: #FFFC00;
+    }
+  }
+  a{
+    color: @color1;
+    &:hover{
+      color: #FFFC00;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .m a{
+      padding: .05rem 0;
+      font-size: .18rem;
+    } 
+}
+.m div{
+  padding: .12rem 0;
+  color: @color1;
+  background-color: @color-i;
+}
+.m span{
+  position: relative;
+  .m-f-delta{
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    border-top: 6px solid white;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+}
+.m-lg{
+
+
+@media screen and (max-width: 768px){
+    text-align: center;
+    .lg-r{
+      text-align: center;
+    }
+  };
+  font-size: .32rem;
+  color: gray;
+  padding: .4rem 0;
+  .lg-l{
+    color: @color-i;
+    padding-left: 0;
+    padding-right: 30px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:991px) {
+  .m-lg { 
+    padding-top: .2rem;
+    padding-bottom: .3rem;
+    font-size: .18rem;
+  }
 }

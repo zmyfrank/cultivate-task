@@ -1,0 +1,122 @@
+.m-ol {
+  font-size: .2rem;
+  color: gray;
+  background-color: white;
+  padding: 20px 10px;
+}
+.m-ol a {
+  color: inherit;
+}
+article {
+  overflow: hidden;
+}
+article img {
+  width: 100%;
+}
+.small-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.small-icon span {
+  margin: .05rem 0;
+}
+.small-icon span:first-child {
+  margin-right: .3rem;
+}
+.small-icon i {
+  margin: 0 .05rem;
+}
+.small-icon .span-rt {
+  border-right: 1px solid #cccccc;
+}
+.small-icon .icon-wb {
+  display: inline-block;
+  width: 32px;
+  height: 33px;
+  background-position-x: -113px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.small-icon .icon-wx {
+  display: inline-block;
+  width: 32px;
+  height: 33px;
+  background-position-x: -145px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.small-icon .icon-wt {
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+  background-position-x: -315px;
+  background-position-y: 0;
+  background-image: url("../images/c-task.png");
+}
+.art-main-tt {
+  padding: .3rem 0;
+  background: url(../images/icon-4-banner.png) no-repeat;
+  background-size: cover;
+}
+.art-main-tt img {
+  width: auto;
+}
+.art-main {
+  padding: 5%;
+}
+.art-main h2 {
+  color: #CA0000;
+}
+/* 新闻文本 */
+.m-newstext {
+  padding: .4rem 0;
+  font-size: .16rem;
+}
+.m-newstext h4 {
+  color: red;
+}
+.m-newstext p {
+  text-indent: .3rem;
+}
+.m-newstext strong {
+  font-weight: 400;
+}
+.text-group .input-addon {
+  background-color: white;
+  background-image: url("../images/icon-input.png");
+  background-position-x: 3px;
+  background-position-y: 2px;
+  background-repeat: no-repeat;
+}
+.text-group input {
+  border-left: none;
+}
+.text-group input:focus {
+  box-shadow: none;
+  border: 1px solid #cccccc;
+  border-left: none;
+}
+.inp-sub {
+  width: 1.15rem;
+  height: .4rem;
+  color: #CA0000;
+  border: 1px solid #CA0000;
+  background: white;
+}
+.art-inp strong {
+  font-size: .18rem;
+  padding-right: 1.3rem;
+}
+.art-inp i {
+  color: #CA0000;
+  background: none;
+  padding-right: 2px;
+}
+article form {
+  color: gray;
+  padding-top: .3rem;
+}
+article form span {
+  padding-right: .1rem;
+}

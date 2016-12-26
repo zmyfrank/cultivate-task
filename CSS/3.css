@@ -1,0 +1,249 @@
+main {
+  overflow: hidden;
+}
+.m-ol {
+  font-size: .2rem;
+  color: gray;
+  background-color: white;
+  padding: 20px 10px;
+  margin-bottom: 0;
+}
+.m-ol a {
+  color: inherit;
+}
+.bread{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+  .bread{
+    justify-content: space-around;
+  }
+  .bread ol{
+    margin: 2% 0!important;
+  }
+  .m-form{
+    margin: 2% 0!important;
+  }
+}
+.bread ol{
+  margin:2% 0 2% 7% ;
+  padding: 0;
+  background-color: white;
+}
+.m-form {
+  margin:2% 7% 2% 0;
+  padding: 0;
+}
+.m-form .m-f-btn {
+  padding: 1px 15px;
+  background-color: white;
+  border: 1px solid #CA0000;
+  color: #CA0000;
+}
+.m-h {
+  margin-bottom: .65rem;
+}
+.m-h h1 {
+  background-color: #FFF2CD;
+  padding-bottom: .18rem;
+  padding-top: .3rem;
+  margin: 0;
+}
+.m-h div {
+  position: relative;
+  width: 70%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+.m-h div img {
+  border: 5px solid white;
+  max-width: 100%;
+  box-shadow: 8px 5px 20px gray;
+}
+
+/* 视频样式 */
+.m-h div.m-h-pin {
+  float: initial;
+  width: 80%;
+  margin: 2% auto 0;
+}
+.m-h div .m-h-btnl {
+  width: 30%;
+  position: absolute;
+  font-size: .25rem;
+  left: 16%;
+  top: 80%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
+  padding: .14rem 0;
+}
+
+.m-h div .m-h-btnrbox {
+  width: 30%;
+  position: absolute;
+  font-size: .25rem;
+  left: 54%;
+  top: 80%;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  border: 0.05rem solid white;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .m-h div .m-h-btnl,
+  .m-h div .m-h-btnr{
+    font-size: .16rem;
+  }
+  .m-h div .m-h-btnrbox {
+    width: 34%;
+  }
+
+}
+.m-h div .m-h-btnr {
+  width: 100%;
+  padding: 0.09rem 0;
+  background-color: white;
+  color: #2a6496;
+  border: 1px solid #2a6496;
+}
+.m-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: .14rem;
+  padding: 0 5%;
+  margin: .3rem 0;
+}
+.m-section .m-s-av {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  width: 30%;
+  min-width: 200px;
+  background-image: url("../images/icon-3-1px.png");
+  background-repeat: repeat-x;
+  margin: .1rem 1%;
+  cursor: pointer;
+}
+.m-section .m-s-av i {
+  display: inline-block;
+  height: 49px;
+  width: 40px;
+  margin-left: .1rem;
+  margin-right: .2rem;
+  background-image: url("../images/c-task.png");
+  background-position-x: -177px;
+  background-position-y: 0;
+}
+.m-section .section-btn,
+.m-section .m-section-btn {
+  width: 2rem;
+  text-align: center;
+  line-height: .6rem;
+  margin-top: .2rem;
+  background: #fff;
+}
+main h2 {
+  padding-bottom: 10px;
+}
+.m-newvid div {
+  width: 30%;
+  background-image: url("../images/icon-3-1px.png");
+  background-repeat: repeat-x;
+  margin: .1rem 1%;
+}
+@media (max-width: 768px) {
+  .m-newvid div {
+    width: 100%;
+  }
+
+}
+.m-newvid div img {
+  width: 100%;
+}
+.m-s-img img {
+  width: 100%;
+}
+.m-f-box {
+  background-image: url("../images/icon-3-banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: .6rem;
+}
+.m-f-box i {
+  display: inline-block;
+  width: 191px;
+  height:25px;
+  background-image: url("../images/icon-fivestar.png");
+  background-size: contain;
+}
+.m-f-box ul {
+  float: left;
+  list-style: none;
+  width: 70%;
+  border: 1px solid #B7E9C2;
+  margin-left: 5%;
+  margin-bottom: 0;
+  padding-left: 3%;
+}
+@media (max-width: 768px) {
+  .m-f-box ul {
+    width: 90%;
+  }
+}
+.m-f-box form {
+  overflow: hidden;
+}
+.m-f-box form .checkbox-left {
+  float: left;
+  padding: 0;
+}
+.m-f-box form span {
+  font-size: .18rem;
+}
+.m-f-box form .m-f-num {
+  color: orange;
+  font-size: .3rem;
+}
+.m-f-box form div {
+  font-size: .22rem;
+  margin: 2% 1%;
+  float: left;
+}
+.m-f-b-s div {
+  float: left;
+  font-size: .22rem;
+}
+.m-f-b-s .m-f-inp-r {
+  float: right;
+  margin-right: 10%;
+}
+.m-f-b-s input {
+  font-size: .15rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #B7E9C2;
+  padding: 0.05rem .22rem;
+  margin: .1rem auto;
+  margin-left: .1rem;
+}
+.m-f-b-text p {
+  width: 90%;
+  font-size: .26rem;
+  margin-top: 8px;
+  color: #439054;
+}
+.m-f-b-text textarea {
+  width: 90%;
+  height: .5rem;
+  border-radius: 5px;
+  border: 1px solid #B7E9C2;
+  resize: none;
+}
