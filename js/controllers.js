@@ -9,6 +9,14 @@ mainCtrl.controller('HelloCtrl', ['$scope',
     }
 ]);
 
+/* 新闻列表 */
+mainCtrl.controller('HelloCtrl', ['$scope',
+    function($scope) {
+
+    }
+]);
+
+
 
 /**
  * 这里接着往下写，如果控制器的数量非常多，需要分给多个开发者，可以借助于grunt来合并代码
