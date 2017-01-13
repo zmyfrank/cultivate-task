@@ -1,0 +1,13 @@
+/* 定制案例 */
+.example-img {
+    float: left;
+}
+.example-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.example-info p {
+    width: 100%;
+}

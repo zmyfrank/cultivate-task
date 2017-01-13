@@ -1,0 +1,13 @@
+.m-newsinfo {
+    margin: 0 auto;
+}
+.m-newsinfo h1,
+.m-newsinfo h2,
+.m-newsinfo h3 {
+    text-align: center;
+}
+
+.m-newsinfo img {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" ng-app="routerApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小程序大全-好的小程序都在这儿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="framework/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/public.css">
+
+    <script src="framework/1.3.0.14/angular.js"></script>
+    <script src="framework/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="framework/ocLazyLoad.min.js"></script>
+    <script src="framework/jquery-1.9.1.js"></script>
+    <script src="framework/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d6ffaae1a76c1fdd4a50977bb19ff757";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo3.png" alt="葡萄藤"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="search-value"  placeholder="找找看？">
+                            <span class="btn btn-default" id="search-btn">搜索</span>
+                        </div>
+                        <br><span id="search-tips"></span>
+                    </form>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<main ng-controller="HelloCtrl" class="container">
+    <!-- 导航按钮 -->
+    <ul class=m-typenav>
+        <li ui-sref=".home" class="btn btn-default typenav-btn m-typenav-active">首页</li>
+        <li ui-sref=".tab" class="btn btn-default typenav-btn">实用工具</li>
+        <li ui-sref=".tab" class="btn btn-default typenav-btn">社交生活</li>
+        <li ui-sref=".tab" class="btn btn-default typenav-btn">金融理财</li>
+        <li ui-sref=".tab" class="btn btn-default typenav-btn">影音娱乐</li>
+        <li ui-sref=".tab" class="btn btn-default typenav-btn">教育学习</li>
+        <li ui-sref=".newslist" class="btn btn-default typenav-btn">最新咨讯</li>
+        <li ui-sref=".customized" class="btn btn-default typenav-btn">小程序定制</li>
+        <li ui-sref=".home" class="btn btn-default typenav-btn">其他</li>
+    </ul>
+    <div ui-view>
+        <p>{{greeting.text}}</p>
+    </div>
+
+    <!-- 侧边栏提示框 -->
+    <div class="qq-left ng-scope">
+        <div class="right-bar">
+            <p>客服群</p>
+            <a target="_blank"
+               href="//shang.qq.com/wpa/qunwpa?idkey=261da9ec4a1c2dad7c828d03d2b6bbf932167cfba629d33074e21e5696a8cc38">
+                <img src="http://pub.idqqimg.com/wpa/images/group.png">
+            </a>
+            <div class="right-bar-phone">
+                <p><img src="img/right-bar_11.png">官方热线</p>
+                <p>010-59478634</p>
+            </div>
+            <div class="right-bar-btn">
+                <img src="img/right-bar_07.png">
+                <span>我要发布</span>
+                <img src="img/right-bar_15.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- 翻页 -->
+    <nav class="m-pagination">
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <div class="copyright">
+        <p>
+            Copyright ©
+            2015
+            北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>
+

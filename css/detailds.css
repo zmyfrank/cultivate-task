@@ -1,0 +1,56 @@
+
+
+@media (max-width: 768px) {
+    .navbar-form {
+        line-height:10px;
+    }
+}
+
+/* 小程序详情页面 */
+.m-programtab-tt　 {
+    padding: 10px 0;
+}
+
+.m-programtab-tt div {
+    margin-bottom: 10px;
+}
+
+.programtab-name {
+    margin-top: 15px;
+}
+
+.programtab-name img {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .programtab-name {
+        text-align: center;
+    }
+
+    .programtab-name img {
+        width: 100px;
+        float: none;
+        margin-right: 0;
+    }
+
+}
+
+.programtab-name h2 {
+    font-size: 18px;
+}
+
+.programtab-img {
+    text-align: center;
+}
+
+.programtab-img img {
+    width: 100px;
+}
+
+.programtab-img span {
+    display: block;
+    text-align: center;
+}
