@@ -10,8 +10,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 '':{
                     templateUrl: 'tpls/home.html',
                 },
-                'samll@home': {
-                    templateUrl: 'tpls/d.html',
+                'banner@home': {
+                    templateUrl: 'tpls/stpls/banner.html',
                 },
             },
             resolve: {
@@ -54,7 +54,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             views: {
                 '':{
                     templateUrl:'tpls/newslist.html',
-                }
+                },
+                'banner@newslist': {
+                    templateUrl: 'tpls/stpls/banner.html',
+                },
             },
             resolve: {
                 home_login: ['$ocLazyLoad', function($ocLazyLoad) {
